@@ -72,38 +72,6 @@ main {
                 }
             }
         }
-
-        &.sound {
-            bottom: ds-rem-calc(40);
-            right: ds-rem-calc(20);
-
-            @include ds-breakpoint(medium) {
-                right: ds-rem-calc(30);
-            }
-
-            @include ds-breakpoint(large) {
-                right: ds-rem-calc(40);
-            }
-
-            &.isMobile {
-                display: none;
-            }
-
-            a {
-                display: block;
-                width: 16px;
-                height: 16px;
-                background: url("../images/icon-sound.png") no-repeat;
-                background-size: 32px 15px;
-                background-position: top left;
-
-                transition: opacity 0.3s ease-in-out, background-position 0s;
-
-                &.muted {
-                    background-position: top right;
-                }
-            }
-        }
     }
 
     .close-button {

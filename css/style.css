@@ -29,7 +29,9 @@
 .unslider-fade .unslider-wrap li.unslider-active {
   z-index: 10; }
 
-.unslider ul, .unslider ol, .unslider li {
+.unslider ul,
+.unslider ol,
+.unslider li {
   list-style: none;
   /* Reset any weird spacing */
   margin: 0;
@@ -308,28 +310,6 @@ main .meta.social {
           main .meta.social ul li a:hover span, main .meta.social ul li a:focus span {
             transform: translateY(-200%); }
 
-main .meta.sound {
-  bottom: 2.5rem;
-  right: 1.25rem; }
-  @media (min-width: 768px) {
-    main .meta.sound {
-      right: 1.875rem; } }
-  @media (min-width: 992px) {
-    main .meta.sound {
-      right: 2.5rem; } }
-  main .meta.sound.isMobile {
-    display: none; }
-  main .meta.sound a {
-    display: block;
-    width: 16px;
-    height: 16px;
-    background: url("../images/icon-sound.png") no-repeat;
-    background-size: 32px 15px;
-    background-position: top left;
-    transition: opacity 0.3s ease-in-out, background-position 0s; }
-    main .meta.sound a.muted {
-      background-position: top right; }
-
 main .close-button {
   font-family: "Montserrat", "Helvetica Neue", "Helvetica", sans-serif;
   left: 50%;
@@ -377,25 +357,6 @@ main {
         padding: 0;
         margin: 0;
         color: #979797; }
-
-.grain {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  overflow: hidden;
-  pointer-events: none; }
-  .grain:before {
-    content: "";
-    background: url("../images/glitch.jpg") no-repeat 50% 50% fixed;
-    background-size: cover;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    z-index: 98;
-    pointer-events: none;
-    animation: shift 6s ease-in-out infinite alternate; }
 
 .no-csspointerevents .grain {
   display: none; }
@@ -461,8 +422,6 @@ main {
     color: #7b8085; }
     .hero.dark .meta.social a span:before {
       color: #d9e1e9; }
-  .hero.dark .meta.sound a {
-    background-image: url("../images/icon-sound-light.png"); }
 
 .about {
   position: absolute;
@@ -777,7 +736,7 @@ main {
       position: relative; }
       .work__content .ajax-section__loader {
         display: none;
-        background: #fff url(../images/loading.gif) no-repeat center;
+        background: #fff url(../img/loading.gif) no-repeat center;
         background-size: 30px 30px;
         width: 100%;
         height: 100%;
@@ -843,7 +802,7 @@ main {
               .work__content .ajax-section__content .ajaxpage .unslider .unslider-arrow {
                 bottom: 1.875rem; } }
             .work__content .ajax-section__content .ajaxpage .unslider .unslider-arrow.next {
-              background-image: url(../images/icon-right.svg);
+              background-image: url(../img/icon-right.svg);
               background-repeat: no-repeat;
               background-position: 12.5px center;
               left: 2.8125rem;
@@ -858,7 +817,7 @@ main {
                 opacity: 1;
                 margin-left: 0.3125rem; }
             .work__content .ajax-section__content .ajaxpage .unslider .unslider-arrow.prev {
-              background-image: url(../images/icon-left.svg);
+              background-image: url(../img/icon-left.svg);
               background-repeat: no-repeat;
               background-position: 10.5px center;
               left: 0.625rem; }
@@ -1047,7 +1006,7 @@ body.project-single {
           body.project-single .ajaxpage .unslider .unslider-arrow {
             bottom: 1.875rem; } }
         body.project-single .ajaxpage .unslider .unslider-arrow.next {
-          background-image: url(../images/icon-right.svg);
+          background-image: url(../img/icon-right.svg);
           background-repeat: no-repeat;
           background-position: 12.5px center;
           left: 2.8125rem;
@@ -1062,7 +1021,7 @@ body.project-single {
             opacity: 1;
             margin-left: 0.3125rem; }
         body.project-single .ajaxpage .unslider .unslider-arrow.prev {
-          background-image: url(../images/icon-left.svg);
+          background-image: url(../img/icon-left.svg);
           background-repeat: no-repeat;
           background-position: 10.5px center;
           left: 0.625rem; }
