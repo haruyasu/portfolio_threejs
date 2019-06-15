@@ -25,7 +25,7 @@ main {
                     @include ds-breakpoint(medium) {
                         display: inline-block;
                         &:after {
-                            font-size: ds-rem-calc(9);
+                            font-size: ds-rem-calc(12);
                             content: "/";
                             display: inline-block;
                             margin-left: ds-rem-calc(5);
@@ -43,7 +43,7 @@ main {
                         display: inline-block;
                         overflow: hidden;
                         color: $light;
-                        font-size: ds-rem-calc(14);
+                        font-size: ds-rem-calc(16);
                         vertical-align: middle;
 
                         span {
@@ -56,7 +56,7 @@ main {
                                 top: 200%;
                                 content: attr(data-hover);
                                 transform: translate3d(0, 0, 0);
-                                font-size: ds-rem-calc(14);
+                                font-size: ds-rem-calc(16);
                                 color: $black;
                             }
                         }
@@ -78,7 +78,7 @@ main {
         font-family: $ds-headings-font-family;
         left: 50%;
         position: absolute;
-        font-size: ds-rem-calc(14);
+        font-size: ds-rem-calc(18);
         opacity: 0;
         transition: bottom 0.3s ease-in-out, opacity 1s ease-in-out;
         bottom: -ds-rem-calc(40);

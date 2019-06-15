@@ -60,20 +60,20 @@
         return false;
     });
 
-    closeTop.click(function () {
-        about.addClass("idle").removeClass("active-screen");
+    bottomTrigger.click(function () {
+        work.removeClass("idle").addClass("active-screen");
         hero.animate({
-            top: 0
+            top: - 20 + "%"
         }, 500, function () {
         });
 
         return false;
     });
 
-    bottomTrigger.click(function () {
-        work.removeClass("idle").addClass("active-screen");
+    closeTop.click(function () {
+        about.addClass("idle").removeClass("active-screen");
         hero.animate({
-            top: - 20 + "%"
+            top: 0
         }, 500, function () {
         });
 

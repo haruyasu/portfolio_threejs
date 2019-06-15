@@ -1,4 +1,5 @@
 // Colors
+$main-color: #e6e6e6;
 $black: #353535;
 $light: #979797;
 $accent: #e0fffd;
@@ -7,16 +8,17 @@ $white: #d9e1e9;
 $white-off: #7b8085;
 
 // Color Defaults
-$ds-color-background: white;
+$ds-color-background: #e6e6e6;
 $ds-color-text: $black;
 
 // Fonts
-$ds-font-family: "Karla", "Helvetica Neue", "Helvetica", sans-serif;
-$ds-headings-font-family: "Montserrat", "Helvetica Neue", "Helvetica", sans-serif;
+$ds-font-family: 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', Meiryo, メイリオ, Osaka, 'MS PGothic', arial, helvetica, sans-serif;
+$ds-headings-font-family: 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', Meiryo, メイリオ, Osaka, 'MS PGothic', arial, helvetica, sans-serif;
 $ds-font-size: 100% !default;
-$ds-font-size-body-copy: ds-rem-calc(18) !default;
-$ds-font-size-medium: ds-rem-calc(14) !default;
-$ds-font-size-small: ds-rem-calc(12) !default;
+$ds-font-size-body-copy: ds-rem-calc(20) !default;
+$ds-font-size-large: ds-rem-calc(20) !default;
+$ds-font-size-medium: ds-rem-calc(18) !default;
+$ds-font-size-small: ds-rem-calc(16) !default;
 $ds-font-smoothing: antialiased !default;
 $ds-font-style: normal !default;
 $ds-font-weight: 400 !default;

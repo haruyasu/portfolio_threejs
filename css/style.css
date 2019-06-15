@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .unslider {
   overflow: auto;
   margin: 0;
@@ -68,33 +69,10 @@
   background: #000;
   cursor: default; }
 
-.clearfix:after, .work__content .ajax-section__project-navigation ul:after, .work__content .ajax-section__content .ajaxpage__content:after, body.project-single .ajaxpage__content:after {
+.clearfix:after, .work__content .ajax-section__project-navigation ul:after, .work__content .ajax-section__content .ajaxpage__content:after {
   content: "";
   display: table;
   clear: both; }
-
-body.project-single .ajaxpage {
-  position: relative;
-  margin-left: auto;
-  margin-right: auto;
-  padding-right: 15px;
-  padding-left: 15px; }
-  @media (min-width: 576) {
-    body.project-single .ajaxpage {
-      width: 540px;
-      max-width: 100%; } }
-  @media (min-width: 768px) {
-    body.project-single .ajaxpage {
-      width: 720px;
-      max-width: 100%; } }
-  @media (min-width: 992px) {
-    body.project-single .ajaxpage {
-      width: 960px;
-      max-width: 100%; } }
-  @media (min-width: 1200px) {
-    body.project-single .ajaxpage {
-      width: 1140px;
-      max-width: 100%; } }
 
 *,
 *:before,
@@ -104,11 +82,11 @@ body.project-single .ajaxpage {
   box-sizing: border-box; }
 
 body {
-  background: white;
-  font-family: "Karla", "Helvetica Neue", "Helvetica", sans-serif;
+  background: #e6e6e6;
+  font-family: "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", Meiryo, メイリオ, Osaka, "MS PGothic", arial, helvetica, sans-serif;
   font-weight: 400;
   color: #353535;
-  font-size: 1.125rem;
+  font-size: 1.25rem;
   font-style: normal;
   line-height: 1.45;
   text-rendering: optimizeLegibility;
@@ -153,7 +131,7 @@ a:focus {
   text-shadow: 0.1875rem 0 #fff, 0.125rem 0 #fff, 0.0625rem 0 #fff, -ds-rem-calc(1) 0 #fff, -ds-rem-calc(2) 0 #fff, -ds-rem-calc(3) 0 #fff; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Montserrat", "Helvetica Neue", "Helvetica", sans-serif;
+  font-family: "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", Meiryo, メイリオ, Osaka, "MS PGothic", arial, helvetica, sans-serif;
   line-height: 1.25;
   font-weight: 400;
   font-style: normal;
@@ -189,7 +167,7 @@ h3 {
       font-size: 1.25rem; } }
 
 h4 {
-  font-family: "Karla", "Helvetica Neue", "Helvetica", sans-serif;
+  font-family: "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", Meiryo, メイリオ, Osaka, "MS PGothic", arial, helvetica, sans-serif;
   font-size: 1rem;
   letter-spacing: 0; }
   @media (min-width: 768px) {
@@ -200,7 +178,7 @@ h4 {
       font-size: 1.25rem; } }
 
 h5 {
-  font-family: "Karla", "Helvetica Neue", "Helvetica", sans-serif;
+  font-family: "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", Meiryo, メイリオ, Osaka, "MS PGothic", arial, helvetica, sans-serif;
   color: #979797;
   font-size: 0.8125rem;
   letter-spacing: 0; }
@@ -281,7 +259,7 @@ main .meta.social {
         main .meta.social ul li {
           display: inline-block; }
           main .meta.social ul li:after {
-            font-size: 0.5625rem;
+            font-size: 0.75rem;
             content: "/";
             display: inline-block;
             margin-left: 0.3125rem;
@@ -292,7 +270,7 @@ main .meta.social {
         display: inline-block;
         overflow: hidden;
         color: #979797;
-        font-size: 0.875rem;
+        font-size: 1rem;
         vertical-align: middle; }
         main .meta.social ul li a span {
           position: relative;
@@ -303,7 +281,7 @@ main .meta.social {
             top: 200%;
             content: attr(data-hover);
             transform: translate3d(0, 0, 0);
-            font-size: 0.875rem;
+            font-size: 1rem;
             color: #353535; }
         main .meta.social ul li a:hover, main .meta.social ul li a:focus {
           opacity: 1; }
@@ -311,10 +289,10 @@ main .meta.social {
             transform: translateY(-200%); }
 
 main .close-button {
-  font-family: "Montserrat", "Helvetica Neue", "Helvetica", sans-serif;
+  font-family: "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", Meiryo, メイリオ, Osaka, "MS PGothic", arial, helvetica, sans-serif;
   left: 50%;
   position: absolute;
-  font-size: 0.875rem;
+  font-size: 1.125rem;
   opacity: 0;
   transition: bottom 0.3s ease-in-out, opacity 1s ease-in-out;
   bottom: -ds-rem-calc(40);
@@ -366,7 +344,7 @@ main {
   z-index: 1;
   overflow: hidden;
   width: 100%;
-  background-image: radial-gradient(50% 100%, #e6e6e6 50%, #d6d6d6 100%); }
+  background: #e6e6e6; }
   .hero__content {
     width: 100%;
     padding: 0 5%;
@@ -390,8 +368,8 @@ main {
     transform: translateX(-50%);
     opacity: 0.5; }
   .hero__trigger-button {
-    font-family: "Montserrat", "Helvetica Neue", "Helvetica", sans-serif;
-    font-size: 0.875rem;
+    font-family: "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", Meiryo, メイリオ, Osaka, "MS PGothic", arial, helvetica, sans-serif;
+    font-size: 1.25rem;
     position: absolute;
     z-index: 2;
     left: 50%;
@@ -428,7 +406,7 @@ main {
   z-index: 2;
   width: 100%;
   height: 100%;
-  background: #fff;
+  background: #e6e6e6;
   overflow-y: scroll; }
   .about.idle {
     pointer-events: none;
@@ -480,7 +458,7 @@ main {
           color: #979797;
           display: inline-block; }
           .about__content__box .social li:after {
-            font-size: 0.5625rem;
+            font-size: 0.75rem;
             content: "/";
             display: inline-block;
             margin-left: 0.3125rem;
@@ -491,7 +469,7 @@ main {
             display: inline-block;
             overflow: hidden;
             color: #979797;
-            font-size: 0.75rem;
+            font-size: 1rem;
             line-height: 1rem;
             height: 1.125rem;
             vertical-align: middle; }
@@ -504,7 +482,7 @@ main {
                 top: 200%;
                 content: attr(data-hover);
                 transform: translate3d(0, 0, 0);
-                font-size: 0.75rem;
+                font-size: 1rem;
                 line-height: 1rem;
                 color: #353535; }
             .about__content__box .social li a:hover, .about__content__box .social li a:focus {
@@ -586,7 +564,7 @@ main {
   z-index: 3;
   width: 100%;
   height: 100%;
-  background: white;
+  background: #e6e6e6;
   overflow-y: scroll;
   overflow-x: hidden; }
   .work.idle {
@@ -640,7 +618,7 @@ main {
           color: #979797;
           display: inline-block;
           overflow: hidden;
-          font-size: 0.75rem;
+          font-size: 1rem;
           vertical-align: middle; }
           .work__content__box .filters li span {
             position: relative;
@@ -651,14 +629,14 @@ main {
               top: 200%;
               content: attr(data-hover);
               transform: translate3d(0, 0, 0);
-              font-size: 0.75rem;
+              font-size: 1rem;
               color: #353535; }
           .work__content__box .filters li:hover, .work__content__box .filters li:focus, .work__content__box .filters li.is-checked {
             opacity: 1; }
             .work__content__box .filters li:hover span, .work__content__box .filters li:focus span, .work__content__box .filters li.is-checked span {
               transform: translateY(-200%); }
           .work__content__box .filters li:after {
-            font-size: 0.5625rem;
+            font-size: 0.75rem;
             content: "/";
             display: inline-block;
             margin-left: 0.3125rem;
@@ -723,7 +701,7 @@ main {
               line-height: 1.2; }
             .work__content__thumbnails .thumbnail .overlay .project-info span {
               color: #979797;
-              font-size: 0.75rem; }
+              font-size: 1rem; }
         .work__content__thumbnails .thumbnail:hover {
           margin-top: 1.875rem;
           margin-bottom: 0.625rem;
@@ -736,8 +714,7 @@ main {
       position: relative; }
       .work__content .ajax-section__loader {
         display: none;
-        background: #fff url(../img/loading.gif) no-repeat center;
-        background-size: 30px 30px;
+        background: #e6e6e6 url(../img/loading.gif) no-repeat center;
         width: 100%;
         height: 100%;
         position: absolute;
@@ -754,7 +731,7 @@ main {
             .work__content .ajax-section__project-navigation ul .next, .work__content .ajax-section__project-navigation ul .prev {
               display: block; } }
           .work__content .ajax-section__project-navigation ul .next a, .work__content .ajax-section__project-navigation ul .prev a {
-            font-size: 0.75rem; }
+            font-size: 1rem; }
         .work__content .ajax-section__project-navigation ul .next {
           right: -5.625rem; }
         .work__content .ajax-section__project-navigation ul .prev {
@@ -772,7 +749,7 @@ main {
           .work__content .ajax-section__project-close {
             top: 2.5rem; } }
         .work__content .ajax-section__project-close a {
-          font-size: 0.75rem; }
+          font-size: 1rem; }
       .work__content .ajax-section__content .ajaxpage {
         margin-top: 2.5rem; }
         @media (min-width: 768px) {
@@ -788,7 +765,7 @@ main {
             display: block;
             width: 30px;
             height: 30px;
-            background: white;
+            background: #e6e6e6;
             box-shadow: 0 4px 25px 2px rgba(0, 0, 0, 0.1);
             position: absolute;
             z-index: 2;
@@ -848,7 +825,7 @@ main {
                 left: 6.875rem; } }
             .work__content .ajax-section__content .ajaxpage .unslider .unslider-nav ol {
               display: inline-block;
-              background: white;
+              background: #e6e6e6;
               box-shadow: 0 4px 25px 2px rgba(0, 0, 0, 0.1);
               padding: 0 10px;
               height: 30px;
@@ -890,10 +867,10 @@ main {
                 margin: 0; }
               .work__content .ajax-section__content .ajaxpage__content--meta li small {
                 display: block;
-                font-size: 0.75rem;
+                font-size: 1rem;
                 color: #979797; }
               .work__content .ajax-section__content .ajaxpage__content--meta li p {
-                font-size: 0.875rem;
+                font-size: 1.125rem;
                 margin: 0; }
           .work__content .ajax-section__content .ajaxpage__content--description {
             margin-top: 1.25rem; }
@@ -942,207 +919,3 @@ main {
                     opacity: 1; }
                     .work__content .ajax-section__content .ajaxpage__content--description .social li a:hover span, .work__content .ajax-section__content .ajaxpage__content--description .social li a:focus span {
                       transform: translateY(-200%); }
-
-body.project-single {
-  position: relative;
-  height: auto;
-  max-height: none;
-  overflow-y: scroll; }
-  body.project-single header .logo {
-    position: absolute;
-    top: 2.5rem;
-    left: 1.25rem;
-    z-index: 10; }
-    @media (min-width: 768px) {
-      body.project-single header .logo {
-        left: 1.875rem; } }
-    @media (min-width: 992px) {
-      body.project-single header .logo {
-        left: 2.5rem; } }
-  body.project-single header .meta.name {
-    position: absolute;
-    z-index: 10;
-    top: 2.5rem;
-    right: 1.25rem; }
-    @media (min-width: 768px) {
-      body.project-single header .meta.name {
-        right: 1.875rem; } }
-    @media (min-width: 992px) {
-      body.project-single header .meta.name {
-        right: 2.5rem; } }
-    body.project-single header .meta.name p {
-      padding: 0;
-      margin: 0;
-      color: #979797; }
-  body.project-single .ajaxpage {
-    padding-top: 2.5rem;
-    padding-bottom: 2.5rem; }
-    @media (min-width: 768px) {
-      body.project-single .ajaxpage {
-        padding-top: 3.75rem;
-        padding-bottom: 3.75rem; } }
-    @media (min-width: 992px) {
-      body.project-single .ajaxpage {
-        padding-top: 5rem;
-        padding-bottom: 5rem; } }
-    body.project-single .ajaxpage .unslider {
-      position: relative; }
-      body.project-single .ajaxpage .unslider .unslider-arrow {
-        text-indent: -999em;
-        display: block;
-        width: 30px;
-        height: 30px;
-        background: white;
-        box-shadow: 0 4px 25px 2px rgba(0, 0, 0, 0.1);
-        position: absolute;
-        z-index: 2;
-        top: auto;
-        bottom: 0.625rem;
-        border-radius: 100px; }
-        @media (min-width: 768px) {
-          body.project-single .ajaxpage .unslider .unslider-arrow {
-            bottom: 0.9375rem; } }
-        @media (min-width: 992px) {
-          body.project-single .ajaxpage .unslider .unslider-arrow {
-            bottom: 1.875rem; } }
-        body.project-single .ajaxpage .unslider .unslider-arrow.next {
-          background-image: url(../img/icon-right.svg);
-          background-repeat: no-repeat;
-          background-position: 12.5px center;
-          left: 2.8125rem;
-          right: auto; }
-          @media (min-width: 768px) {
-            body.project-single .ajaxpage .unslider .unslider-arrow.next {
-              left: 3.125rem; } }
-          @media (min-width: 992px) {
-            body.project-single .ajaxpage .unslider .unslider-arrow.next {
-              left: 4.0625rem; } }
-          body.project-single .ajaxpage .unslider .unslider-arrow.next:hover {
-            opacity: 1;
-            margin-left: 0.3125rem; }
-        body.project-single .ajaxpage .unslider .unslider-arrow.prev {
-          background-image: url(../img/icon-left.svg);
-          background-repeat: no-repeat;
-          background-position: 10.5px center;
-          left: 0.625rem; }
-          @media (min-width: 768px) {
-            body.project-single .ajaxpage .unslider .unslider-arrow.prev {
-              left: 0.9375rem; } }
-          @media (min-width: 992px) {
-            body.project-single .ajaxpage .unslider .unslider-arrow.prev {
-              left: 1.875rem; } }
-          body.project-single .ajaxpage .unslider .unslider-arrow.prev:hover {
-            opacity: 1;
-            margin-left: -ds-rem-calc(5); }
-      body.project-single .ajaxpage .unslider .unslider-nav {
-        display: block;
-        position: absolute;
-        z-index: 2;
-        top: auto;
-        bottom: 0.625rem;
-        left: 5.625rem;
-        transition: all 0.3s ease-in-out; }
-        @media (min-width: 768px) {
-          body.project-single .ajaxpage .unslider .unslider-nav {
-            bottom: 0.9375rem;
-            left: 5.9375rem; } }
-        @media (min-width: 992px) {
-          body.project-single .ajaxpage .unslider .unslider-nav {
-            bottom: 1.875rem;
-            left: 6.875rem; } }
-        body.project-single .ajaxpage .unslider .unslider-nav ol {
-          display: inline-block;
-          background: white;
-          box-shadow: 0 4px 25px 2px rgba(0, 0, 0, 0.1);
-          padding: 0 10px;
-          height: 30px;
-          border-radius: 100px; }
-          body.project-single .ajaxpage .unslider .unslider-nav ol li {
-            display: inline-block;
-            line-height: 30px;
-            vertical-align: middle;
-            width: 6px;
-            height: 6px;
-            border: none;
-            background: transparent;
-            border: 1px solid #979797;
-            transition: all 0.3s ease; }
-            body.project-single .ajaxpage .unslider .unslider-nav ol li.unslider-active {
-              background: #353535;
-              border-color: #353535; }
-    body.project-single .ajaxpage__content {
-      margin-top: 1.875rem; }
-      @media (min-width: 768px) {
-        body.project-single .ajaxpage__content {
-          margin-top: 2.8125rem; } }
-      @media (min-width: 992px) {
-        body.project-single .ajaxpage__content {
-          margin-top: 3.75rem; } }
-      body.project-single .ajaxpage__content--meta {
-        margin: 0;
-        padding: 0;
-        list-style: none; }
-        @media (min-width: 992px) {
-          body.project-single .ajaxpage__content--meta {
-            float: left;
-            width: 30%; } }
-        body.project-single .ajaxpage__content--meta li {
-          margin-bottom: 0.9375rem; }
-          body.project-single .ajaxpage__content--meta li:last-of-type {
-            margin-bottom: 0; }
-          body.project-single .ajaxpage__content--meta li h4 {
-            margin: 0; }
-          body.project-single .ajaxpage__content--meta li small {
-            display: block;
-            font-size: 0.75rem;
-            color: #979797; }
-          body.project-single .ajaxpage__content--meta li p {
-            font-size: 0.875rem;
-            margin: 0; }
-      body.project-single .ajaxpage__content--description {
-        margin-top: 1.25rem; }
-        @media (min-width: 768px) {
-          body.project-single .ajaxpage__content--description {
-            margin-top: 2.1875rem; } }
-        @media (min-width: 992px) {
-          body.project-single .ajaxpage__content--description {
-            margin-top: 0;
-            float: left;
-            padding-left: 2%;
-            width: 68%; } }
-        body.project-single .ajaxpage__content--description .social {
-          display: block;
-          list-style: none;
-          margin: 1.25rem 0 0;
-          padding: 0; }
-          body.project-single .ajaxpage__content--description .social li {
-            display: inline-block; }
-            body.project-single .ajaxpage__content--description .social li:after {
-              color: #979797;
-              font-size: 0.5625rem;
-              content: "/";
-              display: inline-block;
-              vertical-align: middle; }
-            body.project-single .ajaxpage__content--description .social li:last-of-type:after {
-              display: none; }
-            body.project-single .ajaxpage__content--description .social li a {
-              display: inline-block;
-              overflow: hidden;
-              color: #979797;
-              font-size: 0.875rem;
-              vertical-align: middle; }
-              body.project-single .ajaxpage__content--description .social li a span {
-                position: relative;
-                display: inline-block;
-                transition: transform 0.4s cubic-bezier(0.85, 0.135, 0.15, 0.5); }
-                body.project-single .ajaxpage__content--description .social li a span:before {
-                  position: absolute;
-                  top: 200%;
-                  content: attr(data-hover);
-                  transform: translate3d(0, 0, 0);
-                  font-size: 0.875rem;
-                  color: #353535; }
-              body.project-single .ajaxpage__content--description .social li a:hover, body.project-single .ajaxpage__content--description .social li a:focus {
-                opacity: 1; }
-                body.project-single .ajaxpage__content--description .social li a:hover span, body.project-single .ajaxpage__content--description .social li a:focus span {
-                  transform: translateY(-200%); }

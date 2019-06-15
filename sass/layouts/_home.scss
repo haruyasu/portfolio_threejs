@@ -3,7 +3,8 @@
     z-index: 1;
     overflow: hidden;
     width: 100%;
-    background-image: radial-gradient(50% 100%, #e6e6e6 50%, #d6d6d6 100%);
+    // background-image: radial-gradient(50% 100%, #e6e6e6 50%, #d6d6d6 100%);
+	background: $main-color;
 
     &__content {
         width: 100%;
@@ -38,7 +39,7 @@
 
     &__trigger-button {
         font-family: $ds-headings-font-family;
-        font-size: ds-rem-calc(14);
+        font-size: $ds-font-size-large;
         position: absolute;
         z-index: 2;
         left: 50%;
