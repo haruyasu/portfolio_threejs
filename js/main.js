@@ -16,11 +16,11 @@
     }
 
     // Loader
-    // $("body").queryLoader2({
-    //     // Loader background color
-    //     backgroundColor: "#fff",
-    //     fadeOutTime: 500
-    // });
+    $("body").queryLoader2({
+        // Loader background color
+        backgroundColor: "#fff",
+        fadeOutTime: 500
+    });
 
     //Hero
     // Centering function
@@ -272,7 +272,6 @@
 
             if (content == false) {
                 wrapperHeight = projectContainer.children("#ajaxpage").outerHeight() + "px";
-
                 projectContainer.animate({ opacity: 1, height: wrapperHeight }, function () {
                     scrollPosition = $("#work").scrollTop();
                     projectNav.fadeIn();
