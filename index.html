@@ -1,12 +1,278 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Portfolio</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    </head>
+    <body>
+        <main role="main">
+            <section id="hero" class="hero">
+                <div class="hero__object-shadow">
+                    <img src="3d/deer-shadow.png" alt="" />
+                </div>
+
+                <a href="#" class="hero__trigger-button top">About</a>
+                <a href="#" class="hero__trigger-button bottom">Work</a>
+
+                <img class="logo" src="images/logo.svg" alt="Scene Logo" />
+
+                <div class="meta name">
+                    <p><small>scenia</small></p>
+                </div>
+
+                <div class="meta social">
+                    <ul>
+                        <li>
+                            <a href="#" target="_blank"
+                                ><span data-hover="twitter">twitter</span></a
+                            >
+                        </li>
+                        <li>
+                            <a href="#" target="_blank"
+                                ><span data-hover="facebook">facebook</span></a
+                            >
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="about" class="about idle">
+                <div class="about__content">
+                    <div class="container">
+                        <div class="row">
+                            <div
+                                class="col-10 offset-1 col-md-8 offset-md-2 col-lg-6 offset-lg-3 about__content__box first"
+                            >
+                                <h5>テスト</h5>
+                                <p>
+                                    この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。
+                                    <a class="underline" href="mailto:contact@aetherthemes.com">e-mail</a>.
+                                </p>
+                                <ul class="social">
+                                    <li>
+                                        <a href="#"><span data-hover="twitter">twitter</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span data-hover="facebook">facebook</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span data-hover="gplus">gplus</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span data-hover="linkedin">linkedin</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-10 offset-1 col-md-8 offset-md-2 col-lg-6 offset-lg-3 about__content__box">
+                                <h5>Services</h5>
+                                <ul class="services">
+                                    <li>Concept &amp; Strategy</li>
+                                    <li>Design Direction</li>
+                                    <li>Product Design</li>
+                                    <li>Web Design</li>
+                                    <li>UI &amp; UX Design</li>
+                                    <li>Front-end Development</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="about__content__full-box">
+                            <div class="row">
+                                <div class="col-10 offset-1 col-md-8 offset-md-2 col-lg-6 offset-lg-3">
+                                    <h5>Clients</h5>
+                                    <p>
+                                        この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。
+                                    </p>
+                                    <!-- <ul class="client-list">
+                                        <li><img src="images/partners/partner-2.png" alt="Client" /></li>
+                                        <li><img src="images/partners/partner-1.png" alt="Client" /></li>
+                                        <li><img src="images/partners/partner-3.png" alt="Client" /></li>
+                                        <li><img src="images/partners/partner-4.png" alt="Client" /></li>
+                                        <li><img src="images/partners/partner-5.png" alt="Client" /></li>
+                                        <li><img src="images/partners/partner-6.png" alt="Client" /></li>
+                                    </ul> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div
+                                class="col-10 offset-1 col-md-8 offset-md-2 col-lg-6 offset-lg-3 about__content__box last"
+                            >
+                                <h5>Want to be on that list?</h5>
+                                <p>
+                                        この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。
+                                    <a class="underline" href="mailto:contact@aetherthemes.com">hello@scenia.com</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <img class="logo" src="images/logo.svg" alt="Scene Logo" />
+
+                    <div class="meta name">
+                        <p><small>scenia</small></p>
+                    </div>
+
+                    <div class="meta social">
+                        <ul>
+                            <li>
+                                <a href="#" target="_blank"
+                                    ><span data-hover="twitter">twitter</span></a
+                                >
+                            </li>
+                            <li>
+                                <a href="#" target="_blank"
+                                    ><span data-hover="facebook">facebook</span></a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="#" class="close-button top">Close</a>
+                </div>
+            </section>
+
+            <section id="work" class="work idle">
+                <div class="work__content">
+                    <div class="container">
+                        <div class="row initial-position">
+                            <div
+                                class="col-10 offset-1 col-md-8 offset-md-2 col-lg-6 offset-lg-3 work__content__box first"
+                            >
+                                <h5>Projects</h5>
+                                <p>
+                                    この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。
+                                </p>
+                                <ul class="filters">
+                                    <li data-filter="*" class="is-checked"><span data-hover="all">all</span></li>
+                                    <li data-filter=".branding"><span data-hover="branding">branding</span></li>
+                                    <li data-filter=".web-design"><span data-hover="web design">web design</span></li>
+                                    <li data-filter=".print"><span data-hover="print">print</span></li>
+                                    <li data-filter=".video"><span data-hover="video">video</span></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="ajax-section clearfix">
+                            <div class="ajax-section__loader"></div>
+                            <div class="ajax-section__project-navigation">
+                                <ul>
+                                    <li class="next"><a href="#">next</a></li>
+                                    <li class="prev"><a href="#">previous</a></li>
+                                </ul>
+                            </div>
+                            <div class="ajax-section__project-close">
+                                <a href="#">Close</a>
+                            </div>
+                            <div class="ajax-section__content"></div>
+                        </div>
+
+                        <div class="row work__content__thumbnails">
+                            <div class="col-12 col-md-4 project show video">
+                                <a href="#!projects/project1" class="thumbnail">
+                                    <div class="overlay">
+                                        <div class="project-info">
+                                            <p>Extrapolate<br /><span>video</span></p>
+                                        </div>
+                                    </div>
+                                    <img src="images/project-grid/thumb1.jpg" alt="thumbnail" />
+                                </a>
+                            </div>
+                            <div class="col-12 col-md-4 project show branding">
+                                <a href="#!projects/project2" class="thumbnail">
+                                    <div class="overlay">
+                                        <div class="project-info">
+                                            <p>Beats Wireless<br /><span>branding</span></p>
+                                        </div>
+                                    </div>
+                                    <img src="images/project-grid/thumb2.jpg" alt="thumbnail" />
+                                </a>
+                            </div>
+                            <div class="col-12 col-md-4 project show branding">
+                                <a href="#!projects/project3" class="thumbnail">
+                                    <div class="overlay">
+                                        <div class="project-info">
+                                            <p>Rowe<br /><span>branding</span></p>
+                                        </div>
+                                    </div>
+                                    <img src="images/project-grid/thumb3.jpg" alt="thumbnail" />
+                                </a>
+                            </div>
+                            <div class="col-12 col-md-4 project show print">
+                                <a href="#!projects/project4" class="thumbnail">
+                                    <div class="overlay">
+                                        <div class="project-info">
+                                            <p>Covers<br /><span>print</span></p>
+                                        </div>
+                                    </div>
+                                    <img src="images/project-grid/thumb4.jpg" alt="thumbnail" />
+                                </a>
+                            </div>
+                            <div class="col-12 col-md-4 project show web-design">
+                                <a href="#!projects/project5" class="thumbnail">
+                                    <div class="overlay">
+                                        <div class="project-info">
+                                            <p>Noir<br /><span>web design</span></p>
+                                        </div>
+                                    </div>
+                                    <img src="images/project-grid/thumb5.jpg" alt="thumbnail" />
+                                </a>
+                            </div>
+                            <div class="col-12 col-md-4 project show print">
+                                <a href="#!projects/project6" class="thumbnail">
+                                    <div class="overlay">
+                                        <div class="project-info">
+                                            <p>Studio 73<br /><span>print</span></p>
+                                        </div>
+                                    </div>
+                                    <img src="images/project-grid/thumb6.jpg" alt="thumbnail" />
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div
+                                class="col-10 offset-1 col-md-8 offset-md-2 col-lg-6 offset-lg-3 work__content__box last"
+                            >
+                                <h5>Want to work with us?</h5>
+                                <p>
+                                    この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。
+                                    <a class="underline" href="mailto:contact@aetherthemes.com">hello@scenia.com</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <img class="logo" src="images/logo.svg" alt="Scene Logo" />
+
+                    <div class="meta name">
+                        <p><small>scenia</small></p>
+                    </div>
+
+                    <div class="meta social">
+                        <ul>
+                            <li>
+                                <a href="https://twitter.com/AetherThemes" target="_blank"
+                                    ><span data-hover="twitter">twitter</span></a
+                                >
+                            </li>
+                            <li>
+                                <a href="https://www.facebook.com/aetherthemes" target="_blank"
+                                    ><span data-hover="facebook">facebook</span></a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="#" class="close-button bottom">Close</a>
+                </div>
+            </section>
+        </main>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    </body>
 </html>
