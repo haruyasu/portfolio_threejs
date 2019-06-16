@@ -22,7 +22,7 @@ main {
                     color: $light;
                     display: block;
 
-                    @include ds-breakpoint(medium) {
+                    @include ds-breakpoint(large) {
                         display: inline-block;
                         &:after {
                             font-size: ds-rem-calc(12);

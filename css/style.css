@@ -255,7 +255,7 @@ main .meta.social {
     main .meta.social ul li {
       color: #979797;
       display: block; }
-      @media (min-width: 768px) {
+      @media (min-width: 992px) {
         main .meta.social ul li {
           display: inline-block; }
           main .meta.social ul li:after {

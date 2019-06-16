@@ -3,12 +3,11 @@ $main-color: #e6e6e6;
 $black: #353535;
 $light: #979797;
 $accent: #e0fffd;
-
 $white: #d9e1e9;
 $white-off: #7b8085;
 
 // Color Defaults
-$ds-color-background: #e6e6e6;
+$ds-color-background: $main-color;
 $ds-color-text: $black;
 
 // Fonts
