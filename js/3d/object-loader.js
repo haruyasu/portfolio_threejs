@@ -39,9 +39,6 @@ var HEIGHT,
     windowHalfY,
     mousePos = { x: 0, y: 0 };
 
-
-
-
 function initScreenAnd3D() {
     scene = new THREE.Scene();
     WIDTH = window.innerWidth;
