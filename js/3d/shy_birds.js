@@ -1,3 +1,14 @@
+window.addEventListener('load', init, false);
+
+function init(event) {
+    initScreenAnd3D();
+    // createControls();
+    createLights();
+    createFloor();
+    createBirds();
+    loop();
+}
+
 var scene,
     camera,
     controls,
@@ -9,33 +20,34 @@ var scene,
     backLight,
     light,
     renderer,
-    container;
-
-//SCENE
-var floor, bird1, bird2;
-
-//SCREEN VARIABLES
-
-var HEIGHT,
+    container,
+    floor,
+    bird1,
+    bird2,
+    HEIGHT,
     WIDTH,
     windowHalfX,
     windowHalfY,
     mousePos = { x: 0, y: 0 };
 
-//INIT THREE JS, SCREEN AND MOUSE EVENTS
+function createControls() {
+    controls = new THREE.OrbitControls(camera, container);
+}
 
-function init() {
+function initScreenAnd3D() {
     scene = new THREE.Scene();
     HEIGHT = window.innerHeight;
     WIDTH = window.innerWidth;
+
     aspectRatio = WIDTH / HEIGHT;
     fieldOfView = 60;
     nearPlane = 1;
     farPlane = 2000;
     camera = new THREE.PerspectiveCamera(fieldOfView, aspectRatio, nearPlane, farPlane);
-    camera.position.z = 1000;
-    camera.position.y = 300;
+    camera.position.z = 900;
+    camera.position.y = 100;
     camera.lookAt(new THREE.Vector3(0, 0, 0));
+
     renderer = new THREE.WebGLRenderer({ alpha: true, antialias: true });
     renderer.setPixelRatio(window.devicePixelRatio);
     renderer.setSize(WIDTH, HEIGHT);
@@ -107,8 +119,6 @@ function createLights() {
     scene.add(shadowLight);
 }
 
-//BIRD
-
 Bird = function () {
     this.rSegments = 4;
     this.hSegments = 3;
@@ -130,25 +140,25 @@ Bird = function () {
 
     this.threegroup = new THREE.Group();
 
-    // materials
     this.yellowMat = new THREE.MeshLambertMaterial({
         color: 0xffde79,
         shading: THREE.FlatShading
     });
+
     this.whiteMat = new THREE.MeshLambertMaterial({
         color: 0xffffff,
         shading: THREE.FlatShading
     });
+
     this.blackMat = new THREE.MeshLambertMaterial({
         color: 0x000000,
         shading: THREE.FlatShading
     });
+
     this.orangeMat = new THREE.MeshLambertMaterial({
         color: 0xff5535,
         shading: THREE.FlatShading
     });
-
-    //WINGS
 
     this.wingLeftGroup = new THREE.Group();
     this.wingRightGroup = new THREE.Group();
@@ -167,8 +177,6 @@ Bird = function () {
     this.wingRightGroup.rotation.y = -Math.PI / 2;
     wingRight.rotation.x = -Math.PI / 4;
 
-    //BODY
-
     var bodyGeom = new THREE.CylinderGeometry(40, 70, 200, this.rSegments, this.hSegments);
     this.bodyBird = new THREE.Mesh(bodyGeom, this.yellowMat);
     this.bodyBird.position.y = 70;
@@ -182,8 +190,6 @@ Bird = function () {
     this.threegroup.add(this.bodyBird);
     this.threegroup.add(this.wingLeftGroup);
     this.threegroup.add(this.wingRightGroup);
-
-    // EYES
 
     this.face = new THREE.Group();
     var eyeGeom = new THREE.BoxGeometry(60, 60, 10);
@@ -213,8 +219,6 @@ Bird = function () {
     this.rightIris.position.z = 40;
     this.rightIris.rotation.y = Math.PI / 4;
 
-    // BEAK
-
     var beakGeom = new THREE.CylinderGeometry(0, 20, 20, 4, 1);
     this.beak = new THREE.Mesh(beakGeom, this.orangeMat);
     this.beak.position.z = 65;
@@ -226,8 +230,6 @@ Bird = function () {
     this.face.add(this.leftEye);
     this.face.add(this.leftIris);
     this.face.add(this.beak);
-
-    //FEATHERS
 
     var featherGeom = new THREE.BoxGeometry(10, 20, 5);
     this.feather1 = new THREE.Mesh(featherGeom, this.yellowMat);
@@ -310,6 +312,7 @@ Bird.prototype.look = function (hAngle, vAngle) {
     this.face.rotation.y = this.hAngle;
     this.bodyBird.geometry.verticesNeedUpdate = true;
 };
+
 Bird.prototype.lookAway = function (fastMove) {
     var speed = fastMove ? 0.4 : 2;
     var ease = fastMove ? Strong.easeOut : Strong.easeInOut;
@@ -324,6 +327,7 @@ Bird.prototype.lookAway = function (fastMove) {
     } else {
         var th = (Math.random() * Math.PI) / 4;
     }
+
     _this = this;
     TweenMax.killTweensOf(this.shyAngles);
     TweenMax.to(this.shyAngles, speed, {
@@ -332,6 +336,7 @@ Bird.prototype.lookAway = function (fastMove) {
         ease: ease,
         delay: delay
     });
+
     TweenMax.to(this.color, speed, {
         r: col.r,
         g: col.g,
@@ -339,6 +344,7 @@ Bird.prototype.lookAway = function (fastMove) {
         ease: ease,
         delay: delay
     });
+
     TweenMax.to(this.beak.scale, speed, {
         z: beakScaleZ,
         x: beakScaleX,
@@ -350,22 +356,26 @@ Bird.prototype.lookAway = function (fastMove) {
 Bird.prototype.stare = function () {
     _this = this;
     var col = this.normalSkin;
+
     if (this.side == "right") {
         var th = Math.PI / 3;
     } else {
         var th = -Math.PI / 3;
     }
+
     TweenMax.to(this.shyAngles, 2, {
         v: -0.5,
         h: th,
         ease: Strong.easeInOut
     });
+
     TweenMax.to(this.color, 2, {
         r: col.r,
         g: col.g,
         b: col.b,
         ease: Strong.easeInOut
     });
+
     TweenMax.to(this.beak.scale, 2, {
         z: 0.8,
         x: 1.5,
@@ -373,14 +383,15 @@ Bird.prototype.stare = function () {
     });
 };
 
-//*
 function createFloor() {
     floor = new THREE.Mesh(
         new THREE.PlaneBufferGeometry(1000, 1000),
+        // new THREE.MeshBasicMaterial({ color: 0x979797 })
         new THREE.MeshBasicMaterial({ color: 0xe6e6e6 })
     );
+
     floor.rotation.x = -Math.PI / 2;
-    floor.position.y = -33;
+    floor.position.y = -83;
     floor.receiveShadow = true;
     scene.add(floor);
 }
@@ -388,20 +399,21 @@ function createFloor() {
 function createBirds() {
     bird1 = new Bird();
     bird1.threegroup.position.x = 0;
+    bird1.threegroup.position.y = -50;
     scene.add(bird1.threegroup);
 
     bird2 = new Bird();
     bird2.threegroup.position.x = -250;
     bird2.side = "right";
     bird2.threegroup.scale.set(0.8, 0.8, 0.8);
-    bird2.threegroup.position.y = -8;
+    bird2.threegroup.position.y = -58;
     scene.add(bird2.threegroup);
 
     bird3 = new Bird();
     bird3.threegroup.position.x = 250;
     bird3.side = "left";
     bird3.threegroup.scale.set(0.8, 0.8, 0.8);
-    bird3.threegroup.position.y = -8;
+    bird3.threegroup.position.y = -58;
     scene.add(bird3.threegroup);
 }
 
@@ -447,9 +459,3 @@ function loop() {
 function render() {
     renderer.render(scene, camera);
 }
-
-init();
-createLights();
-createFloor();
-createBirds();
-loop();

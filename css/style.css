@@ -348,6 +348,8 @@ main {
   .hero__content {
     width: 100%;
     padding: 0 5%;
+    position: absolute;
+    z-index: 2;
     text-align: center; }
     @media (min-width: 768px) {
       .hero__content {
@@ -368,8 +370,7 @@ main {
     transform: translateX(-50%);
     opacity: 0.5; }
   .hero__trigger-button {
-    font-family: "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", Meiryo, メイリオ, Osaka, "MS PGothic", arial, helvetica, sans-serif;
-    font-size: 1.25rem;
+    font-size: 1.3125rem;
     position: absolute;
     z-index: 2;
     left: 50%;
@@ -386,20 +387,6 @@ main {
         bottom: 35px; }
   .hero.sphere, .hero.field {
     background: #fbffff; }
-
-.hero.dark {
-  background-image: radial-gradient(50% 100%, #080808 50%, #14161b 100%); }
-  .hero.dark .hero__content p,
-  .hero.dark .hero__content h1 {
-    color: #d9e1e9; }
-  .hero.dark .hero__trigger-button {
-    color: #d9e1e9; }
-  .hero.dark .meta.name p {
-    color: #7b8085; }
-  .hero.dark .meta.social a {
-    color: #7b8085; }
-    .hero.dark .meta.social a span:before {
-      color: #d9e1e9; }
 
 .about {
   position: absolute;
@@ -428,6 +415,7 @@ main {
     -o-transition: top 0.5s cubic-bezier(0.85, 0.135, 0.15, 0.5);
     transition: top 0.5s cubic-bezier(0.85, 0.135, 0.15, 0.5); }
     .about.active-screen .close-button {
+      font-size: 1.3125rem;
       opacity: 1;
       bottom: 2.5rem; }
       .about.active-screen .close-button:hover {
@@ -587,6 +575,7 @@ main {
     -o-transition: top 0.5s cubic-bezier(0.85, 0.135, 0.15, 0.5);
     transition: top 0.5s cubic-bezier(0.85, 0.135, 0.15, 0.5); }
     .work.active-screen .close-button {
+      font-size: 1.3125rem;
       opacity: 1;
       bottom: 2.5rem; }
       .work.active-screen .close-button:hover {

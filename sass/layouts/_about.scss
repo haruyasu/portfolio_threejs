@@ -31,6 +31,7 @@
         transition: top 0.5s cubic-bezier(0.85, 0.135, 0.15, 0.5);
 
         .close-button {
+            font-size: $ds-font-size-large;
             opacity: 1;
             bottom: ds-rem-calc(40);
 

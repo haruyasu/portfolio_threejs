@@ -17,20 +17,18 @@
 
     // Loader
     $("body").queryLoader2({
-        // Loader background color
-        backgroundColor: "#fff",
+        backgroundColor: "#e6e6e6",
         fadeOutTime: 500
     });
 
     //Hero
-    // Centering function
     function centerInit() {
         hero.css({
             "height": $(window).height()
         });
 
         $(".hero__content").css({
-            "margin-top": ($(window).height() - $(".hero__content").height()) / 2 + "px"
+            "margin-top": ($(window).height() - $(".hero__content").height()) / 5 + "px"
         });
 
         about.css({
