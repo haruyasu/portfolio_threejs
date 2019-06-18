@@ -228,6 +228,7 @@ h6 {
 .exp-wrap .year {
     margin-top: 16px; 
     width: 150px;
+    text-align: right;
 }
 
 .progress-wrap {
@@ -242,7 +243,7 @@ h6 {
     height: 4px;
     -webkit-box-shadow: none;
     box-shadow: none;
-    background: #1f1f1f;
+    background: #979797;
     overflow: visible;
     border-radius: 0;
 }
@@ -252,7 +253,7 @@ h6 {
     -webkit-box-shadow: none;
     box-shadow: none;
     line-height: 1.2;
-    color: #121212;
+    color: #979797;
     font-weight: 400;
     text-align: right;
     position: relative;
@@ -273,7 +274,7 @@ h6 {
     position: absolute;
     top: -34px;
     right: 0;
-    color: #6c757d;
+    color: #979797;
 }
 .progress-bar.color-1 {
     background: #2f89fc;
