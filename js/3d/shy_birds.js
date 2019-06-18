@@ -387,7 +387,7 @@ function createFloor() {
     floor = new THREE.Mesh(
         new THREE.PlaneBufferGeometry(1000, 1000),
         // new THREE.MeshBasicMaterial({ color: 0x979797 })
-        new THREE.MeshBasicMaterial({ color: 0xe6e6e6 })
+        new THREE.MeshBasicMaterial({ color: 0xf5f5f5 })
     );
 
     floor.rotation.x = -Math.PI / 2;

@@ -17,7 +17,7 @@
 
     // Loader
     $("body").queryLoader2({
-        backgroundColor: "#e6e6e6",
+        backgroundColor: "#f5f5f5",
         fadeOutTime: 500
     });
 
