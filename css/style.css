@@ -86,7 +86,7 @@ body {
   font-family: "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", Meiryo, メイリオ, Osaka, "MS PGothic", arial, helvetica, sans-serif;
   font-weight: 400;
   color: #353535;
-  font-size: 1.25rem;
+  font-size: 1.125rem;
   font-style: normal;
   line-height: 1.45;
   text-rendering: optimizeLegibility;
@@ -370,7 +370,7 @@ main {
     transform: translateX(-50%);
     opacity: 0.5; }
   .hero__trigger-button {
-    font-size: 1.3125rem;
+    font-size: 1.25rem;
     position: absolute;
     z-index: 2;
     left: 50%;
@@ -415,7 +415,7 @@ main {
     -o-transition: top 0.5s cubic-bezier(0.85, 0.135, 0.15, 0.5);
     transition: top 0.5s cubic-bezier(0.85, 0.135, 0.15, 0.5); }
     .about.active-screen .close-button {
-      font-size: 1.3125rem;
+      font-size: 1.25rem;
       opacity: 1;
       bottom: 2.5rem; }
       .about.active-screen .close-button:hover {
@@ -432,6 +432,14 @@ main {
       @media (min-width: 992px) {
         .about__content__box {
           margin-top: 5.625rem; } }
+      .about__content__box .person-img {
+        text-align: center; }
+        .about__content__box .person-img img {
+          border: 2px solid #e6e6e6;
+          width: 250px;
+          border-radius: 250px; }
+        .about__content__box .person-img .z-depth-1 {
+          box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12); }
       .about__content__box .social {
         list-style: none;
         margin: 1.25rem 0 0;
@@ -477,22 +485,62 @@ main {
               opacity: 1; }
               .about__content__box .social li a:hover span, .about__content__box .social li a:focus span {
                 transform: translateY(-200%); }
-      .about__content__box .services {
-        list-style: none;
-        margin: 1.25rem 0 0;
-        padding: 0; }
-        @media (min-width: 768px) {
-          .about__content__box .services {
-            margin-top: 1.5625rem; } }
-        @media (min-width: 992px) {
-          .about__content__box .services {
-            margin-top: 2.1875rem; } }
-        .about__content__box .services li {
-          margin-bottom: 0.625rem; }
-          .about__content__box .services li:last-of-type {
+      .about__content__box .exp-wrap {
+        width: 100%;
+        border-bottom: 1px solid #979797;
+        float: left; }
+        .about__content__box .exp-wrap .desc {
+          float: left;
+          width: calc(100% - 150px); }
+          .about__content__box .exp-wrap .desc h4 span {
+            color: #979797;
+            font-weight: 400; }
+          .about__content__box .exp-wrap .desc .location {
             margin-bottom: 0; }
-          .about__content__box .services li p {
-            font-size: 1.25rem; }
+        .about__content__box .exp-wrap .year {
+          float: left;
+          margin-top: 16px;
+          width: 150px;
+          text-align: right; }
+      .about__content__box .progress-wrap {
+        margin-bottom: 30px; }
+        .about__content__box .progress-wrap h4 {
+          font-size: 20px;
+          margin-bottom: 10px; }
+      .about__content__box .progress {
+        height: 4px;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        background: #979797;
+        overflow: visible;
+        border-radius: 0; }
+      .about__content__box .progress-bar {
+        background: #2f89fc;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        line-height: 1.2;
+        color: #979797;
+        font-weight: 400;
+        text-align: right;
+        position: relative;
+        overflow: visible;
+        border-radius: 30px; }
+        .about__content__box .progress-bar span {
+          position: absolute;
+          top: -34px;
+          right: 0;
+          color: #979797; }
+        .about__content__box .progress-bar:after {
+          content: "";
+          position: absolute;
+          top: -3px;
+          right: 0;
+          width: 10px;
+          height: 10px;
+          background: #2f89fc;
+          border-radius: 50%; }
+        .about__content__box .progress-bar .color-1 {
+          background: #2f89fc; }
       .about__content__box.last {
         margin-bottom: 6.25rem; }
         @media (min-width: 768px) {
@@ -509,43 +557,6 @@ main {
         @media (min-width: 992px) {
           .about__content__box.first {
             margin-top: 7.5rem; } }
-    .about__content__full-box {
-      width: 100%;
-      background: #e0fffd;
-      margin-top: 2.8125rem;
-      padding-top: 2.8125rem;
-      padding-bottom: 2.8125rem; }
-      @media (min-width: 768px) {
-        .about__content__full-box {
-          margin-top: 4.0625rem;
-          padding-top: 4.0625rem;
-          padding-bottom: 4.0625rem; } }
-      @media (min-width: 992px) {
-        .about__content__full-box {
-          margin-top: 5.625rem;
-          padding-top: 5.625rem;
-          padding-bottom: 5.625rem; } }
-      .about__content__full-box .client-list {
-        width: 100%;
-        text-align: center;
-        list-style: none;
-        margin: 2.5rem 0 0;
-        padding: 0; }
-        @media (min-width: 768px) {
-          .about__content__full-box .client-list {
-            margin: 1.25rem 0 0; } }
-        .about__content__full-box .client-list li {
-          margin: 1.875rem 0;
-          display: block; }
-          @media (min-width: 768px) {
-            .about__content__full-box .client-list li {
-              display: inline-block;
-              margin: 1.875rem 0.9375rem; } }
-          .about__content__full-box .client-list li img {
-            max-width: 109px; }
-            @media (min-width: 768px) {
-              .about__content__full-box .client-list li img {
-                max-width: 139px; } }
 
 .work {
   position: absolute;
@@ -575,7 +586,7 @@ main {
     -o-transition: top 0.5s cubic-bezier(0.85, 0.135, 0.15, 0.5);
     transition: top 0.5s cubic-bezier(0.85, 0.135, 0.15, 0.5); }
     .work.active-screen .close-button {
-      font-size: 1.3125rem;
+      font-size: 1.25rem;
       opacity: 1;
       bottom: 2.5rem; }
       .work.active-screen .close-button:hover {

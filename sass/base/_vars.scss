@@ -5,6 +5,7 @@ $light: #979797;
 $accent: #e0fffd;
 $white: #d9e1e9;
 $white-off: #7b8085;
+$blue: #2f89fc;
 
 // Color Defaults
 $ds-color-background: $main-color;
@@ -14,8 +15,8 @@ $ds-color-text: $black;
 $ds-font-family: 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', Meiryo, メイリオ, Osaka, 'MS PGothic', arial, helvetica, sans-serif;
 $ds-headings-font-family: 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', Meiryo, メイリオ, Osaka, 'MS PGothic', arial, helvetica, sans-serif;
 $ds-font-size: 100% !default;
-$ds-font-size-body-copy: ds-rem-calc(20) !default;
-$ds-font-size-large: ds-rem-calc(21) !default;
+$ds-font-size-body-copy: ds-rem-calc(18) !default;
+$ds-font-size-large: ds-rem-calc(20) !default;
 $ds-font-size-medium: ds-rem-calc(18) !default;
 $ds-font-size-small: ds-rem-calc(16) !default;
 $ds-font-smoothing: antialiased !default;

@@ -56,6 +56,19 @@
                 margin-top: ds-rem-calc(90);
             }
 
+            .person-img {
+                text-align: center;
+
+                img {
+                    border: 2px solid $main-color;
+                    width: 250px;
+                    border-radius: 250px;
+                }
+                .z-depth-1 {
+                    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+                }
+            }
+
             .social {
                 list-style: none;
                 margin: ds-rem-calc(20) 0 0;
@@ -123,28 +136,85 @@
                 }
             }
 
-            .services {
-                list-style: none;
-                margin: ds-rem-calc(20) 0 0;
-                padding: 0;
+            .exp-wrap {
+                width: 100%;
+                border-bottom: 1px solid $light;
+                float: left;
 
-                @include ds-breakpoint(medium) {
-                    margin-top: ds-rem-calc(25);
-                }
+                .desc {
+                    float: left;
+                    width: calc(100% - 150px);
 
-                @include ds-breakpoint(large) {
-                    margin-top: ds-rem-calc(35);
-                }
+                    h4 {
+                        span {
+                            color: $light;
+                            font-weight: $ds-font-weight;
+                        }
+                    }
 
-                li {
-                    margin-bottom: ds-rem-calc(10);
-
-                    &:last-of-type {
+                    .location {
                         margin-bottom: 0;
                     }
-                    p {
-                        font-size: ds-rem-calc(20);
-                    }
+                }
+
+                .year {
+                    float: left;
+                    margin-top: 16px; 
+                    width: 150px;
+                    text-align: right;
+                }
+            }
+
+            .progress-wrap {
+                margin-bottom: 30px;
+
+                h4 {
+                    font-size: 20px;
+                    margin-bottom: 10px;
+                }
+            }
+
+            .progress {
+                height: 4px;
+                -webkit-box-shadow: none;
+                box-shadow: none;
+                background: $light;
+                overflow: visible;
+                border-radius: 0;
+            }
+
+            .progress-bar {
+                background: $blue;
+                -webkit-box-shadow: none;
+                box-shadow: none;
+                line-height: 1.2;
+                color: $light;
+                font-weight: $ds-font-weight;
+                text-align: right;
+                position: relative;
+                overflow: visible;
+                border-radius: 30px;
+
+                span {
+                    position: absolute;
+                    top: -34px;
+                    right: 0;
+                    color: $light;
+                }
+
+                &:after {
+                    content: "";
+                    position: absolute;
+                    top: -3px;
+                    right: 0;
+                    width: 10px;
+                    height: 10px;
+                    background: $blue;
+                    border-radius: 50%;
+                }
+
+                .color-1 {
+                    background: $blue;
                 }
             }
 
@@ -169,56 +239,6 @@
 
                 @include ds-breakpoint(large) {
                     margin-top: ds-rem-calc(120);
-                }
-            }
-        }
-
-        &__full-box {
-            width: 100%;
-            background: $accent;
-            margin-top: ds-rem-calc(45);
-            padding-top: ds-rem-calc(45);
-            padding-bottom: ds-rem-calc(45);
-
-            @include ds-breakpoint(medium) {
-                margin-top: ds-rem-calc(65);
-                padding-top: ds-rem-calc(65);
-                padding-bottom: ds-rem-calc(65);
-            }
-
-            @include ds-breakpoint(large) {
-                margin-top: ds-rem-calc(90);
-                padding-top: ds-rem-calc(90);
-                padding-bottom: ds-rem-calc(90);
-            }
-
-            .client-list {
-                width: 100%;
-                text-align: center;
-                list-style: none;
-                margin: ds-rem-calc(40) 0 0;
-                padding: 0;
-
-                @include ds-breakpoint(medium) {
-                    margin: ds-rem-calc(20) 0 0;
-                }
-
-                li {
-                    margin: ds-rem-calc(30) 0;
-                    display: block;
-
-                    @include ds-breakpoint(medium) {
-                        display: inline-block;
-                        margin: ds-rem-calc(30) ds-rem-calc(15);
-                    }
-
-                    img {
-                        max-width: 109px;
-
-                        @include ds-breakpoint(medium) {
-                            max-width: 139px;
-                        }
-                    }
                 }
             }
         }
