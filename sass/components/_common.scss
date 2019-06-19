@@ -8,6 +8,7 @@ main {
     width: 100%;
     height: 100%;
     overflow: hidden;
+
     .logo {
         position: absolute;
         top: ds-rem-calc(40);
@@ -44,11 +45,5 @@ main {
                 color: $light;
             }
         }
-    }
-}
-
-.no-csspointerevents {
-    .grain {
-        display: none;
     }
 }

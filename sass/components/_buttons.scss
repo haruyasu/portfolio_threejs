@@ -1,17 +1,19 @@
 main {
     .meta {
         &.social {
-            bottom: ds-rem-calc(30);
-            left: ds-rem-calc(20);
+            // bottom: ds-rem-calc(30);
+            top: 80%;
+            left: 50%;
+            transform: translateY(-50%) translateX(-50%);
 
-            @include ds-breakpoint(medium) {
-                left: ds-rem-calc(30);
-                bottom: ds-rem-calc(40);
-            }
+            // @include ds-breakpoint(medium) {
+            //     left: ds-rem-calc(30);
+            //     bottom: ds-rem-calc(40);
+            // }
 
-            @include ds-breakpoint(large) {
-                left: ds-rem-calc(40);
-            }
+            // @include ds-breakpoint(large) {
+            //     left: ds-rem-calc(40);
+            // }
 
             ul {
                 list-style: none;
@@ -22,22 +24,22 @@ main {
                     color: $light;
                     display: block;
 
-                    @include ds-breakpoint(large) {
+                    // @include ds-breakpoint(large) {
+                    display: inline-block;
+                    &:after {
+                        font-size: ds-rem-calc(12);
+                        content: "/";
                         display: inline-block;
-                        &:after {
-                            font-size: ds-rem-calc(12);
-                            content: "/";
-                            display: inline-block;
-                            margin-left: ds-rem-calc(5);
-                            vertical-align: middle;
-                        }
+                        margin-left: ds-rem-calc(5);
+                        vertical-align: middle;
+                    }
 
-                        &:last-of-type {
-                            &:after {
-                                display: none;
-                            }
+                    &:last-of-type {
+                        &:after {
+                            display: none;
                         }
                     }
+                    // }
 
                     a {
                         display: inline-block;

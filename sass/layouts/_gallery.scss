@@ -181,7 +181,7 @@
 					opacity: 0;
 					width: 100%;
 					height: 100%;
-					background-image: linear-gradient(-180deg, rgba(255,255,255,0.00) 0%, #FFFFFF 100%);
+					background-image: linear-gradient(-180deg, rgba(255,255,255,0.00) 0%, $main-color 100%);
 					transition: all .3s ease-in-out;
 
 					.project-info {
