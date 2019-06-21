@@ -52,8 +52,7 @@
         about.removeClass("idle").addClass("active-screen");
         about.animate({
             scrollTop: 0
-        }, 500, function () {
-        });
+        }, 0);
 
         // hero.animate({
         //     top: 20 + "%"
@@ -67,8 +66,7 @@
         work.removeClass("idle").addClass("active-screen");
         work.animate({
             scrollTop: 0
-        }, 500, function () {
-        });
+        }, 0);
 
         // hero.animate({
         //     top: - 20 + "%"
@@ -82,8 +80,12 @@
         about.addClass("idle").removeClass("active-screen");
         hero.animate({
             top: 0
-        }, 500, function () {
-        });
+        }, 0);
+
+        // hero.animate({
+        //     top: 0
+        // }, 500, function () {
+        // });
 
         return false;
     });
@@ -92,8 +94,12 @@
         work.addClass("idle").removeClass("active-screen");
         hero.animate({
             top: 0
-        }, 500, function () {
-        });
+        }, 0);
+
+        // hero.animate({
+        //     top: 0
+        // }, 500, function () {
+        // });
 
         return false;
     });
@@ -199,12 +205,14 @@
 
                 /* If url is pasted in address bar and refreshed */
                 if (pageRefresh == true && hash.substr(0, rootLength) == root) {
-                    $("#work").stop().animate({ scrollTop: 280 }, 800, "easeOutExpo", function () {
+                    // $("#work").stop().animate({ scrollTop: 280 }, 800, "easeOutExpo", function () {
+                    $("#work").stop().animate({ scrollTop: 0 }, 0, function () {
                         loadProject();
                     });
-                    /* Clicking on portfolio grid or through project navigation */
+                /* Clicking on portfolio grid or through project navigation */
                 } else if (pageRefresh == false && hash.substr(0, rootLength) == root) {
-                    $("#work").stop().animate({ scrollTop: 280 }, 800, "easeOutExpo", function () {
+                    // $("#work").stop().animate({ scrollTop: 280 }, 800, "easeOutExpo", function () {
+                    $("#work").stop().animate({ scrollTop: 0 }, 0, function () {
                         if (content == false) {
                             loadProject();
                         } else {
@@ -216,7 +224,7 @@
                         projectNav.fadeOut("100");
                         exitProject.fadeOut("100");
                     });
-                    /* Using browser back button without refreshing */
+                /* Using browser back button without refreshing */
                 } else if (hash == '' && pageRefresh == false || hash.substr(0, rootLength) != root && pageRefresh == false || hash.substr(0, rootLength) != root && pageRefresh == true) {
                     scrollPosition = hash;
                     $("#work").stop().animate({ scrollTop: scrollPosition + "px" }, 1000, function () {
@@ -349,12 +357,10 @@
         });
 
         $(".ajax-section__project-navigation .prev a").on("click", function () {
-
             current = portfolioGrid.find(".project.current");
             prev = current.prev(".project");
             target = $(prev).children("a").attr("href");
             $(this).attr("href", target);
-
 
             if (prev.length === 0) {
                 return false;
@@ -364,20 +370,24 @@
             current.children().removeClass("active");
             prev.addClass("current");
             prev.children().addClass("active");
-
         });
 
         $(".ajax-section__project-close a").on("click", function (e) {
-
             var loader = $(".ajax-section__loader.active-ajax");
 
             deleteProject($(this).attr("href"));
-
             portfolioGrid.find(".project.current").children().removeClass("active");
             loader.fadeOut();
 
             return false;
         });
+
+        closeBottom.on("click", function (e) {
+            deleteProject($(this).attr("href"));
+
+            return false;
+        });
+
 
         pageRefresh = false;
     }

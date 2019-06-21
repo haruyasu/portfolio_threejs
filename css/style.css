@@ -384,13 +384,9 @@ main {
   overflow-y: scroll; }
   .about.idle {
     pointer-events: none;
-    top: -100%;
-    animation-name: pullUp;
-    transition: top 0.5s cubic-bezier(0.85, 0.135, 0.15, 0.5); }
+    top: -100%; }
   .about.active-screen {
-    top: 0;
-    animation-name: pullDown;
-    transition: top 0.5s cubic-bezier(0.85, 0.135, 0.15, 0.5); }
+    top: 0; }
     .about.active-screen .close-button {
       font-size: 1.125rem;
       opacity: 1;
@@ -542,13 +538,9 @@ main {
   overflow-x: hidden; }
   .work.idle {
     pointer-events: none;
-    top: 100%;
-    animation-name: pullUpBottom;
-    transition: top 0.5s cubic-bezier(0.85, 0.135, 0.15, 0.5); }
+    top: 100%; }
   .work.active-screen {
-    top: 0;
-    animation-name: pullDownBottom;
-    transition: top 0.5s cubic-bezier(0.85, 0.135, 0.15, 0.5); }
+    top: 0; }
     .work.active-screen .close-button {
       font-size: 1.125rem;
       opacity: 1;
