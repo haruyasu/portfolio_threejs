@@ -23,10 +23,10 @@
             opacity: 1;
             bottom: ds-rem-calc(40);
 
-            &:hover {
-                opacity: 1;
-                bottom: ds-rem-calc(30);
-            }
+            // &:hover {
+            //     opacity: 1;
+            //     bottom: ds-rem-calc(30);
+            // }
         }
     }
 
@@ -49,8 +49,8 @@
 
                 img {
                     border: 2px solid $main-color;
-                    width: 250px;
-                    border-radius: 250px;
+                    width: 200px;
+                    border-radius: 200px;
                 }
                 .z-depth-1 {
                     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);

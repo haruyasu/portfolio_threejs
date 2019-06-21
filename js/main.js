@@ -50,20 +50,30 @@
     // Page Transitions
     topTrigger.click(function () {
         about.removeClass("idle").addClass("active-screen");
-        hero.animate({
-            top: 20 + "%"
+        about.animate({
+            scrollTop: 0
         }, 500, function () {
         });
+
+        // hero.animate({
+        //     top: 20 + "%"
+        // }, 500, function () {
+        // });
 
         return false;
     });
 
     bottomTrigger.click(function () {
         work.removeClass("idle").addClass("active-screen");
-        hero.animate({
-            top: - 20 + "%"
+        work.animate({
+            scrollTop: 0
         }, 500, function () {
         });
+
+        // hero.animate({
+        //     top: - 20 + "%"
+        // }, 500, function () {
+        // });
 
         return false;
     });

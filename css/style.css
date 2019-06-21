@@ -86,7 +86,7 @@ body {
   font-family: "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", Meiryo, メイリオ, Osaka, "MS PGothic", arial, helvetica, sans-serif;
   font-weight: 400;
   color: #353535;
-  font-size: 1.125rem;
+  font-size: 1rem;
   font-style: normal;
   line-height: 1.45;
   text-rendering: optimizeLegibility;
@@ -359,7 +359,7 @@ main {
     transform: translateX(-50%);
     opacity: 0.5; }
   .hero__trigger-button {
-    font-size: 1.25rem;
+    font-size: 1.125rem;
     position: absolute;
     z-index: 2;
     left: 50%;
@@ -367,13 +367,11 @@ main {
     .hero__trigger-button.top {
       top: 40px; }
       .hero__trigger-button.top:hover {
-        opacity: 1;
-        top: 35px; }
+        opacity: 1; }
     .hero__trigger-button.bottom {
       bottom: 40px; }
       .hero__trigger-button.bottom:hover {
-        opacity: 1;
-        bottom: 35px; }
+        opacity: 1; }
   .hero.sphere, .hero.field {
     background: #fbffff; }
 
@@ -394,12 +392,9 @@ main {
     animation-name: pullDown;
     transition: top 0.5s cubic-bezier(0.85, 0.135, 0.15, 0.5); }
     .about.active-screen .close-button {
-      font-size: 1.25rem;
+      font-size: 1.125rem;
       opacity: 1;
       bottom: 2.5rem; }
-      .about.active-screen .close-button:hover {
-        opacity: 1;
-        bottom: 1.875rem; }
   .about__content {
     position: relative;
     width: 100%; }
@@ -415,8 +410,8 @@ main {
         text-align: center; }
         .about__content__box .person-img img {
           border: 2px solid #f5f5f5;
-          width: 250px;
-          border-radius: 250px; }
+          width: 200px;
+          border-radius: 200px; }
         .about__content__box .person-img .z-depth-1 {
           box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12); }
       .about__content__box .social {
@@ -548,29 +543,16 @@ main {
   .work.idle {
     pointer-events: none;
     top: 100%;
-    -webkit-animation-name: pullUpBottom;
     animation-name: pullUpBottom;
-    -webkit-transition: top 0.5s cubic-bezier(0.85, 0.135, 0.15, 0.5);
-    -moz-transition: top 0.5s cubic-bezier(0.85, 0.135, 0.15, 0.5);
-    -ms-transition: top 0.5s cubic-bezier(0.85, 0.135, 0.15, 0.5);
-    -o-transition: top 0.5s cubic-bezier(0.85, 0.135, 0.15, 0.5);
     transition: top 0.5s cubic-bezier(0.85, 0.135, 0.15, 0.5); }
   .work.active-screen {
     top: 0;
-    -webkit-animation-name: pullDownBottom;
     animation-name: pullDownBottom;
-    -webkit-transition: top 0.5s cubic-bezier(0.85, 0.135, 0.15, 0.5);
-    -moz-transition: top 0.5s cubic-bezier(0.85, 0.135, 0.15, 0.5);
-    -ms-transition: top 0.5s cubic-bezier(0.85, 0.135, 0.15, 0.5);
-    -o-transition: top 0.5s cubic-bezier(0.85, 0.135, 0.15, 0.5);
     transition: top 0.5s cubic-bezier(0.85, 0.135, 0.15, 0.5); }
     .work.active-screen .close-button {
-      font-size: 1.25rem;
+      font-size: 1.125rem;
       opacity: 1;
       bottom: 2.5rem; }
-      .work.active-screen .close-button:hover {
-        opacity: 1;
-        bottom: 2.1875rem; }
   .work__content {
     position: relative;
     width: 100%; }
@@ -710,7 +692,7 @@ main {
             .work__content .ajax-section__project-navigation ul .next, .work__content .ajax-section__project-navigation ul .prev {
               display: block; } }
           .work__content .ajax-section__project-navigation ul .next a, .work__content .ajax-section__project-navigation ul .prev a {
-            font-size: 1rem; }
+            font-size: 0.875rem; }
         .work__content .ajax-section__project-navigation ul .next {
           right: -5.625rem; }
         .work__content .ajax-section__project-navigation ul .prev {
@@ -728,7 +710,7 @@ main {
           .work__content .ajax-section__project-close {
             top: 2.5rem; } }
         .work__content .ajax-section__project-close a {
-          font-size: 1rem; }
+          font-size: 0.875rem; }
       .work__content .ajax-section__content .ajaxpage {
         margin-top: 2.5rem; }
         @media (min-width: 768px) {
@@ -846,10 +828,10 @@ main {
                 margin: 0; }
               .work__content .ajax-section__content .ajaxpage__content--meta li small {
                 display: block;
-                font-size: 1rem;
+                font-size: 0.875rem;
                 color: #979797; }
               .work__content .ajax-section__content .ajaxpage__content--meta li p {
-                font-size: 1.125rem;
+                font-size: 1rem;
                 margin: 0; }
           .work__content .ajax-section__content .ajaxpage__content--description {
             margin-top: 1.25rem; }
