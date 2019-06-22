@@ -21,8 +21,25 @@
         <!-- <script src="https://cdn.jsdelivr.net/gh/mrdoob/three.js@r104/examples/js/controls/OrbitControls.js"></script> -->
     </head>
     <body>
+        <!-- <header class="site-header">
+            <nav class="gnav">
+                <ul class="gnav__menu">
+                    <li><a class="gnav__menu__item trigger-home" href="#">Home</a></li>
+                    <li><a class="gnav__menu__item trigger-about"href="#">About</a></li>
+                    <li><a class="gnav__menu__item trigger-work"href="#">Work</a></li>
+                </ul>
+            </nav>
+        </header> -->
         <main role="main">
             <section id="hero" class="hero">
+                <div class="gnav">
+                    <ul class="gnav__menu">
+                        <li><a class="gnav__menu__item trigger-home" href="#">Home</a></li>
+                        <li><a class="gnav__menu__item trigger-about"href="#">About</a></li>
+                        <li><a class="gnav__menu__item trigger-work"href="#">Work</a></li>
+                    </ul>
+                </div>
+
                 <!-- <div class="hero__object-shadow">
                     <img src="3d/deer-shadow.png" alt="" />
                 </div> -->
@@ -30,8 +47,8 @@
                     <h1>HI! I'm Haruyasu Kaitori</h1>
                     <p>Full Stack Web Developer - Tokyo, Japan</p>
                 </div>
-                <a href="#" class="hero__trigger-button top">About Me</a>
-                <a href="#" class="hero__trigger-button bottom">Portfolio</a>
+                <!-- <a href="#" class="hero__trigger-button top">About Me</a>
+                <a href="#" class="hero__trigger-button bottom">Portfolio</a> -->
 
                 <!-- <img class="logo" src="img/logo.svg" alt="Scene Logo" /> -->
 
@@ -64,7 +81,14 @@
             </section>
 
             <section id="about" class="about idle">
-                    <div class="about__content">
+                <div class="gnav">
+                    <ul class="gnav__menu">
+                        <li><a class="gnav__menu__item trigger-home" href="#">Home</a></li>
+                        <li><a class="gnav__menu__item trigger-about"href="#">About</a></li>
+                        <li><a class="gnav__menu__item trigger-work"href="#">Work</a></li>
+                    </ul>
+                </div>
+                <div class="about__content">
                         <div class="container">
                             <div class="row">
                                 <div class="col about__content__box first">
@@ -481,11 +505,18 @@
                                 </div>
                             </div>
                         </div>
-                        <a href="#" class="close-button top">Home</a>
+                        <!-- <a href="#" class="close-button top">Home</a> -->
                     </div>
                 </section>
 
             <section id="work" class="work idle">
+                <div class="gnav">
+                    <ul class="gnav__menu">
+                        <li><a class="gnav__menu__item trigger-home" href="#">Home</a></li>
+                        <li><a class="gnav__menu__item trigger-about"href="#">About</a></li>
+                        <li><a class="gnav__menu__item trigger-work"href="#">Work</a></li>
+                    </ul>
+                </div>
                 <div class="work__content">
                     <div class="container">
                         <div class="row initial-position">
@@ -627,7 +658,7 @@
                     <!-- <div class="meta name">
                         <p><small>scenia</small></p>
                     </div> -->
-                    <a href="#" class="close-button bottom">Home</a>
+                    <!-- <a href="#" class="close-button bottom">Home</a> -->
                 </div>
             </section>
         </main>

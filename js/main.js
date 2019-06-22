@@ -5,6 +5,9 @@
     var hero = $("#hero"),
         work = $("#work"),
         about = $("#about"),
+        homeTrigger = $(".trigger-home"),
+        aboutTrigger = $(".trigger-about"),
+        workTrigger = $(".trigger-work"),
         topTrigger = $(".hero__trigger-button.top"),
         bottomTrigger = $(".hero__trigger-button.bottom"),
         closeBottom = $(".close-button.bottom"),
@@ -48,6 +51,37 @@
     $(".ajaxpage").fitVids();
 
     // Page Transitions
+
+    homeTrigger.click(function () {
+        about.addClass("idle").removeClass("active-screen");
+        work.addClass("idle").removeClass("active-screen");
+        hero.animate({
+            top: 0
+        }, 0);
+        return false;
+    });
+
+    aboutTrigger.click(function () {
+        about.removeClass("idle").addClass("active-screen");
+        work.addClass("idle").removeClass("active-screen");
+        about.animate({
+            scrollTop: 0
+        }, 0);
+        return false;
+    });
+
+    workTrigger.click(function () {
+        work.removeClass("idle").addClass("active-screen");
+        about.addClass("idle").removeClass("active-screen");
+        work.animate({
+            scrollTop: 0
+        }, 0);
+        return false;
+    });
+
+
+
+
     topTrigger.click(function () {
         about.removeClass("idle").addClass("active-screen");
         about.animate({
@@ -381,10 +415,19 @@
             return false;
         });
 
-        closeBottom.on("click", function (e) {
+        homeTrigger.on("click", function (e) {
             deleteProject($(this).attr("href"));
             return false;
         });
+
+        aboutTrigger.on("click", function (e) {
+            deleteProject($(this).attr("href"));
+            return false;
+        });
+        // closeBottom.on("click", function (e) {
+        //     deleteProject($(this).attr("href"));
+        //     return false;
+        // });
 
         pageRefresh = false;
     }
