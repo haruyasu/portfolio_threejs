@@ -64,9 +64,9 @@ function initScreenAnd3D() {
 
     window.addEventListener("resize", onWindowResize, false);
     document.addEventListener("mousemove", handleMouseMove, false);
-    document.addEventListener("touchstart", handleTouchStart, false);
-    document.addEventListener("touchend", handleTouchEnd, false);
-    document.addEventListener("touchmove", handleTouchMove, false);
+    // document.addEventListener("touchstart", handleTouchStart, false);
+    // document.addEventListener("touchend", handleTouchEnd, false);
+    // document.addEventListener("touchmove", handleTouchMove, false);
 }
 
 function onWindowResize() {

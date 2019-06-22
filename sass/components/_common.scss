@@ -114,9 +114,10 @@ main {
             text-align: center;
 
             a {
-                padding: 20px;
+                padding: 20px 30px;
                 font-size: 22px;
-                color: #777;
+                font-weight: $ds-font-weight-bold;
+                color: $black-light;
                 text-decoration: none;
                 transition: all 0.45s;
             }
@@ -127,7 +128,7 @@ main {
             }
 
             &:hover a {
-                color: #d94f5c;
+                color: $light;
             }
 
         }
