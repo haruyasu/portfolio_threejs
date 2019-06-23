@@ -347,7 +347,6 @@ main {
       .gnav__menu li a {
         padding: 20px 30px;
         font-size: 22px;
-        font-weight: 700;
         color: #555555;
         text-decoration: none;
         transition: all 0.45s; }
@@ -364,6 +363,17 @@ main {
 .hero .gnav {
   width: calc(100vw - 17px); }
 
+.copyright {
+  width: 100%;
+  position: absolute;
+  z-index: 10;
+  bottom: 20px; }
+  .copyright p {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    color: #979797; }
+
 .hero {
   position: absolute;
   z-index: 1;
@@ -379,9 +389,11 @@ main {
     @media (min-width: 768px) {
       .hero__content {
         padding: 0 10%; } }
-    .hero__content h1,
+    .hero__content h1 {
+      font-weight: 700; }
     .hero__content p {
-      margin: 0; }
+      margin: 15px;
+      font-size: 1.125rem; }
   .hero__three-container {
     display: block;
     position: absolute;

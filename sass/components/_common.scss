@@ -48,51 +48,6 @@ main {
     }
 }
 
-// nav {
-//     position: relative;
-//     background: skyblue;
-
-//     ul {
-//         display: flex;
-//         flex-flow: row;
-//         justify-content: center;
-//         margin: 0;
-//         list-style-type: none;
-//     }
-
-//     a {
-//         display: block;
-//         padding: 30px;
-//         font-size: 20px;
-//     }
-// }
-
-// .site-header {
-//     background: skyblue;
-//     display: flex;
-//     // position: fixed;
-//     justify-content: center;
-//     width: 100%;
-//     z-index: 4;
-// }
-
-// .gnav__menu {
-//     display: flex;
-//     padding: 30px;
-//     margin: 0;
-//     list-style-type: none;
-
-//     &__item {
-//         padding: 30px;
-//         font-size: $ds-font-size-large;
-//     }
-// }
-
-// .site-logo img {
-//     height: 20px;
-//     width: auto;
-// }
-
 .gnav {
     // background: skyblue;
     width: 100%;
@@ -116,7 +71,7 @@ main {
             a {
                 padding: 20px 30px;
                 font-size: 22px;
-                font-weight: $ds-font-weight-bold;
+                // font-weight: $ds-font-weight-bold;
                 color: $black-light;
                 text-decoration: none;
                 transition: all 0.45s;
@@ -144,5 +99,19 @@ main {
 .hero {
     .gnav {
         width: calc(100vw - 17px);
+    }
+}
+
+.copyright {
+    width: 100%;
+    position: absolute;
+    z-index: 10;
+    bottom: 20px;
+
+    p {
+        text-align: center;
+        padding: 0;
+        margin: 0;
+        color: $light;
     }
 }
